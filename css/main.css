@@ -33,4 +33,13 @@ svg {
 
 .lines path {
   stroke-dasharray: 0, 480;
+  transition: all 1s ease;
+}
+
+@keyframes {
+
+  0% { stroke-dasharray: 0, 480; }
+
+  100% { stroke-dasharray: 1000, 480; }
+
 }
