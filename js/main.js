@@ -1,13 +1,9 @@
 $('.btn').on('click', function (e) {
-  $(this).removeClass('lines');
+  $('.lines').toggleClass('.lines path');
 });
 
-$('.btn').on('click', '.lines', function (e) {
-  $(this).addClass('lines');
-});
-
-$('.btn').on('click', function (e) {
-  $(this).addClass('engage');
+$('svg').on('click', '.lines', function () {
+  $(this).addClass('grow');
 });
 
 
