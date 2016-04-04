@@ -1,9 +1,9 @@
-$('.btn').on('click', function (e) {
-  $('svg').toggleClass('js-animate');
+$('svg').on('click', function () {
+  $('svg').toggleClass('is-engaged');
 });
 
-$('.btn').on('click', function (e) {
-  $('svg g:nth-child(2)').toggleClass('engage');
+$('svg').on('mouseover', function () {
+  $('.btn').toggleClass('.btn:active');
 });
 
 // $('.svg').on('animationend', function (e) {
