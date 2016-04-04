@@ -1,11 +1,18 @@
 $('.btn').on('click', function (e) {
-  $('.lines').toggleClass('.lines path');
+  $('svg').toggleClass('js-animate');
 });
 
-$('svg').on('click', '.lines', function () {
-  $(this).addClass('grow');
+$('.btn').on('click', function (e) {
+  $('svg g:nth-child(2)').toggleClass('engage');
 });
 
+// $('.svg').on('animationend', function (e) {
+//   $(this).removeClass('js-animate');
+// });
+
+// $('.js-animate').on('animationend', function (e) {
+//   $(this).addClass('engage');
+// });
 
 
 

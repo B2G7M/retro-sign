@@ -29,17 +29,38 @@ svg {
 
 .btn {
   cursor: pointer;
+  transition: 1s ease;
+}
+
+.btn:hover {
+  fill: rgb (255, 102, 0);
 }
 
 .lines path {
   stroke-dasharray: 0, 480;
-  transition: all 1s ease;
 }
 
-@keyframes {
+.js-animate path {
+  animation: grow 2s ease forwards;
+}
+
+@keyframes grow {
 
   0% { stroke-dasharray: 0, 480; }
 
-  100% { stroke-dasharray: 1000, 480; }
+  100% { stroke-dasharray: 480, 480; }
+
+}
+
+.engage {
+  animation: colour 1s ease forwards;
+  animation-delay: 1.75s;
+}
+
+@keyframes colour {
+
+  0% { fill: #630; }
+
+  100% { fill: orange; }
 
 }
