@@ -35,7 +35,7 @@ svg {
   stroke-dasharray: 0, 480;
 }
 
-.is-engaged .lines path {
+.active .lines path {
   animation: lines 1s linear forwards;
 }
 
@@ -50,7 +50,7 @@ svg {
   }
 }
 
-.is-engaged .engage path {
+.active .engage path {
   transition: all 1s linear;
   fill: #f60;
 }
@@ -59,7 +59,7 @@ svg {
   transition-delay: .2s;
 }
 
-.is-engaged .btn path:nth-child(2) {
+.active .btn path:nth-child(2) {
   fill: #f60;
 }
 
@@ -67,7 +67,7 @@ svg {
   transition-delay: .3s;
 }
 
-.is-engaged .btn path:nth-child(3) {
+.active .btn path:nth-child(3) {
   fill: #f60;
 }
 
@@ -75,7 +75,7 @@ svg {
   transition-delay: .3s;
 }
 
-.is-engaged .btn path:nth-child(4) {
+.active .btn path:nth-child(4) {
   fill: #f60;
 }
 
@@ -83,10 +83,9 @@ svg {
   transition-delay: .2s;
 }
 
-.is-engaged .btn path:nth-child(4) {
+.active .btn path:nth-child(4) {
   fill: #f60;
 }
-
 
 .btn:active {
   transform: scale(1, 1);
